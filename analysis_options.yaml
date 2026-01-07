@@ -1,0 +1,17 @@
+# Analysis options for the RankQuest app
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  errors:
+    # Ignore errors related to Freezed 3.x mixin pattern
+    non_abstract_class_inherits_abstract_member: ignore
+    invalid_annotation_target: ignore
+
+linter:
+  rules:
+    # Disable some overly strict lints for readability
+    prefer_const_constructors: true
+    prefer_const_declarations: true
